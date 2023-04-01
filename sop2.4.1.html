@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javaprogram</title>
+  </head>
+  <script lang="Javascript">
+    function check()
+    {
+        var a;
+        a=f1.t1.value;
+        if(isNaN(a)==true)
+        {
+        alert("value is not a number");
+        }
+        else
+        {
+        alert("value is a number");
+        }
+    }
+  </script>
+  <body>
+    <form name="f1">
+      entered value: <input type="text" name="t1" /><br />
+      <br />
+      <input type="button" value="check" onclick="check()" />
+    </form>
+  </body>
+</html>
