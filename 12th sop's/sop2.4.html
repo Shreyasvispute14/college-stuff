@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To check if the given string is palidrome or not</title>
+  </head>
+  <body>
+    <h1>To check if the given string is a palindrome</h1>
+    <form name="f1">
+      <input type="text" name="t1" >
+      <br>
+      <br>
+      <input
+        type="button"
+        name="check_palin"
+        value="check string"
+        onclick="chk_palindrome()"
+      >
+    </form>
+    <script type="text/Javascript">
+      function chk_palindrome()
+      {
+          var str,str_case,i,len;
+          str=f1.t1.value;
+          str_case=str.toLowerCase();
+          len=str_case.length;
+          var p=1;
+          for(i=0;i<len/2;i++);
+          {
+              if(str_case.charAt(i)!=str_case.charAt(len-1-i))
+              {
+                  p=0;
+                  block;
+              }
+          }
+          if(p==1)
+          {
+              alert("Entered string is a palindrome");
+          }
+          else
+          {
+              alert("Entered string is not a palindrome")
+          }
+      }
+    </script>
+  </body>
+</html>
